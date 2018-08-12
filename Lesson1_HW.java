@@ -21,32 +21,32 @@ class Lesson1_HW {
 		else return false;
 		}
 	static void signCheck (int a) {
-		if (a>=0) System.out.println("Input value is positive");
-			else System.out.println("Input value is negative");
+		if (a>=0) System.out.println("Введенное значение положительное");
+			else System.out.println("Введенное значение отрицательное");
 		}
 	static boolean signCheck1 (int a) {
 		if (a<0) return true;
 		else return false;
 		}
 	static void printname (String a) {
-		System.out.println ("Hi, " + a);
+		System.out.println ("Привет, " + a);
 		}
 	static void yearCheck (int a) {
 		if ((a % 4)==0) {
-			if ((a % 400)==0) System.out.println("Year " + a + " is vysokosniy!");
-			else if ((a % 100)==0) System.out.println("Year  " + a + " is not vysokosniy");
-			else System.out.println("Year " + a + " is vysokosniy");
+			if ((a % 400)==0) System.out.println("Год " + a + " является високосным!");
+			else if ((a % 100)==0) System.out.println("Год  " + a + " не является високосным");
+			else System.out.println("Год " + a + " является високосным");
 			}
-		else System.out.println ("Year " + a + "  is not vysokosniy!");
+		else System.out.println ("Год " + a + "  не является високосным!");
 		}
 	public static void main(String[] args) {
-		System.out.println ("First method working result " + add (1, 2, 6, 3));
-		System.out.println ("Secont method 5+2 result = " + comp(5, 2));
-		System.out.println ("Secont method 10+5 result = " + comp(10, 5));
+		System.out.println ("Результат работы первого метода = " + add (1, 2, 6, 3));
+		System.out.println ("Результат работы второго метода с аргументами 5+2 = " + comp(5, 2));
+		System.out.println ("Результат работы второго метода с аргументами 10+5 = " + comp(10, 5));
 		signCheck(1);
 		signCheck(-2);
-		System.out.println ("Four's method with (-1) param result = " + signCheck1(-1));
-		printname ("Yuriy");
+		System.out.println ("Результат работы четвертого метода с аргументом (-1) = " + signCheck1(-1));
+		printname ("Юрий");
 		yearCheck(1600);
 		yearCheck(1500);
 		yearCheck(1212);
